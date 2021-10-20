@@ -1,0 +1,25 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+.x-form-group {
+    @apply md:w-1/2 px-3 mb-6 md:mb-0;
+}
+
+.x-label {
+    @apply block uppercase tracking-wide text-xs font-bold mb-2;
+}
+
+.x-input {
+    @apply block w-full border rounded py-3 px-4 outline-none;
+}
+
+.x-btn {
+    @apply block px-2 py-1 sm:px-4 sm:py-2 outline-none;
+}
+
+.variant-text:not(:last-child)::after {
+    content: '-';
+    margin: 0 .5rem;
+}
